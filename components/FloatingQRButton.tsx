@@ -65,7 +65,7 @@ export default function FloatingQRButton() {
 
                         <div className="text-center">
                             <QRCode
-                                url="http://localhost:3000#register"
+                                url="https://ai-future-summit-2026.vercel.app#register"
                                 size={250}
                                 label="Scan with your phone to register"
                             />

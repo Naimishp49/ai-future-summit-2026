@@ -149,7 +149,7 @@ export default function VenueSection() {
                     <div className="flex flex-col md:flex-row items-center justify-center gap-8">
                         {/* QR Code */}
                         <QRCode
-                            url="http://localhost:3000#register"
+                            url="https://ai-future-summit-2026.vercel.app#register"
                             size={220}
                             label="Scan to Register"
                         />
