@@ -8,11 +8,9 @@ export default function Header() {
 
     const navLinks = [
         { href: "#home", label: "Home" },
-        { href: "#sessions", label: "Sessions" },
-        { href: "#experts", label: "Experts" },
+        { href: "#programming-challenge", label: "Challenge Details" },
         { href: "#venue", label: "Venue" },
         { href: "#register", label: "Register" },
-        { href: "#about", label: "About DU" },
     ];
 
     return (
@@ -21,7 +19,7 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-3">
-                        <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center shadow-md">
                             <span className="text-white font-bold text-xl">DU</span>
                         </div>
                         <div className="hidden md:block">
@@ -36,7 +34,7 @@ export default function Header() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="text-gray-700 hover:text-purple-600 transition-colors duration-200 font-medium"
+                                className="text-gray-700 hover:text-red-600 transition-colors duration-200 font-medium"
                             >
                                 {link.label}
                             </a>
@@ -47,7 +45,7 @@ export default function Header() {
                     <div className="hidden lg:block">
                         <a
                             href="#register"
-                            className="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
+                            className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
                         >
                             Register Now
                         </a>
@@ -86,7 +84,7 @@ export default function Header() {
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMenuOpen(false)}
-                                    className="text-gray-700 hover:text-purple-600 transition-colors duration-200 font-medium py-2"
+                                    className="text-gray-700 hover:text-red-600 transition-colors duration-200 font-medium py-2"
                                 >
                                     {link.label}
                                 </a>
@@ -94,7 +92,7 @@ export default function Header() {
                             <a
                                 href="#register"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-semibold text-center hover:shadow-lg transition-all duration-200"
+                                className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-semibold text-center hover:shadow-lg transition-all duration-200"
                             >
                                 Register Now
                             </a>
